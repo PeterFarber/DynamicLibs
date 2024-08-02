@@ -1,0 +1,13 @@
+{
+  "type": "commonjs",
+  "name": "process",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "ao build",
+    "test32": "node --test ",
+    "run": "node  --experimental-modules --experimental-wasm-modules --experimental-wasm-memory64 index.js"
+
+  }
+}
