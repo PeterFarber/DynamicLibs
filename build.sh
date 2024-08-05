@@ -1,6 +1,6 @@
 #!/bin/bash
 
-emcc ./module.c -sSIDE_MODULE -sMEMORY64 -o module.o
+emcc ./src/module.c -sSIDE_MODULE -sMEMORY64 -o ./build/module.o
 emcc  \
     -O3 \
     -g2 \
@@ -17,6 +17,4 @@ emcc  \
     -sMAXIMUM_MEMORY=524288000 \
     -sMODULARIZE=1 \
     -lm \
-    -ldl -o ./main.js ./main.c
-    # --preload-file module.o
-    # -sMODULARIZE=1 \
+    -ldl -o ./build/main.js ./src/main.c

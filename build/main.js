@@ -16176,8 +16176,6 @@ var ASM_CONSTS = {
       // anyhow)
     };
   
-  Module.resizeHeap = _emscripten_resize_heap;
-
   function _emscripten_resize_heap(requestedSize) {
     requestedSize = bigintToI53Checked(requestedSize);
   
